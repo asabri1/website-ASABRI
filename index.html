@@ -2,110 +2,157 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Center</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Center</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<style>
+* {
+    box-sizing: border-box;
+}
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f1f5f9;
-            color: #1e293b;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #1e293b;
+}
 
-        header {
-            background: #123b70;
-            color: white;
-            padding: 22px;
-            text-align: center;
-        }
+header {
+    background: #123b70;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
 
-        .container {
-            max-width: 500px;
-            margin: 65px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 14px;
-            text-align: center;
-            box-shadow: 0 5px 20px #00000012;
-        }
+header h1 {
+    margin: 0;
+    font-size: 25px;
+}
 
-        .app-icon {
-            font-size: 65px;
-            margin-bottom: 15px;
-        }
+.container {
+    max-width: 520px;
+    margin: 55px auto;
+    padding: 30px;
+}
 
-        h2 {
-            margin-bottom: 10px;
-        }
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 25px #00000010;
+}
 
-        .description {
-            color: #64748b;
-            line-height: 1.6;
-        }
+.app-icon {
+    width: 90px;
+    height: 90px;
+    background: #e5efff;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    font-size: 45px;
+}
 
-        .download-btn {
-            display: block;
-            margin-top: 25px;
-            padding: 15px;
-            background: #16834a;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
+h2 {
+    margin-bottom: 8px;
+}
 
-        .download-btn:hover {
-            background: #116638;
-        }
+.description {
+    color: #64748b;
+    line-height: 1.6;
+}
 
-        footer {
-            text-align: center;
-            color: #64748b;
-            font-size: 13px;
-            margin-top: 40px;
-        }
-    </style>
+.info {
+    background: #f5f7fa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.info p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.download {
+    display: block;
+    background: #16834a;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 9px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.download:hover {
+    background: #116638;
+}
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    padding: 20px;
+}
+
+@media(max-width: 600px) {
+    .container {
+        margin: 25px auto;
+        padding: 15px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>DOWNLOAD CENTER</h1>
-        <p>Pusat Download Aplikasi</p>
-    </header>
+<header>
+    <h1>DOWNLOAD CENTER</h1>
+    <p>Pusat Download Aplikasi</p>
+</header>
 
-    <main class="container">
+<main class="container">
 
-        <div class="app-icon">📱</div>
+<div class="card">
 
-        <h2>Aplikasi Demo</h2>
+    <div class="app-icon">📱</div>
 
-        <p class="description">
-            Ini adalah website latihan untuk belajar
-            membuat halaman download aplikasi Android.
-        </p>
+    <h2>Aplikasi Demo</h2>
 
-        <a class="download-btn"
-           href="demo.txt"
-           download>
-            ⬇ DOWNLOAD DEMO
-        </a>
+    <p class="description">
+        Halaman informasi dan distribusi aplikasi Android.
+        Periksa detail aplikasi sebelum mengunduh.
+    </p>
 
-        <p class="description">
-            File latihan: TXT • Aman untuk pengujian
-        </p>
+    <div class="info">
+        <p><b>Nama:</b> Aplikasi Demo</p>
+        <p><b>Versi:</b> 1.0.0</p>
+        <p><b>Format:</b> APK</p>
+        <p><b>Pengembang:</b> Nama Pengembang</p>
+    </div>
 
-    </main>
+    <a class="download"
+       href="https://github.com/USERNAME/website-latihan/releases/latest"
+       target="_blank"
+       rel="noopener noreferrer">
+       ⬇ DOWNLOAD APK
+    </a>
 
-    <footer>
-        Website latihan pribadi
-    </footer>
+    <p class="description">
+        Periksa nama dan sumber file sebelum instalasi.
+    </p>
+
+</div>
+
+</main>
+
+<footer>
+    Website Distribusi Aplikasi
+</footer>
 
 </body>
 </html>
